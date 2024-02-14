@@ -1,34 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-br
 ">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body class="">
-    <div class="xl:w-80 flex-col">
-        <div class="flex justify-between mt-8">
-            <h2 class="ml-5">OKYO</h2>
-            <img class="w-5 mr-5" src="imagens/icons8-cardápio.gif" alt="">
+
+<body>
+    <div class="xl:flex w-screen h-screen hidden"> <!--versão desktop-->
+        <header class="flex justify-center w-[30%] h-[90%]">
+            <div class="flex flex-col justify-between w-[80%] h-[90%]">
+                <div class="flex flex-col justify-start">
+                    <div class="flex justify-between mt-10">
+                        <p class="font-bold">OKIO</p>
+                        <img class="w-[6%]" src="imagens/menu-hamburguer.png">
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <P class="mb-5">Skincare</P>
+                    <h1 class="xl:text-5xl font-bold text-5xl">Perfect your <br> Routine</h1>
+                    <p class="mt-10">Unlock the secret to flawless skin <br> with our expertly curated skincare
+                        collection.Elevante your routine
+                        with <br> our premium products and achieve <br> radiant, healthy-looking skin <br> with just a click.
+                    </p>
+                    <p class="mt-8">Shop the Ordinary ⟶</p>
+                </div>
+            </div>
+        </header>
+        <div class="flex-col justify-center absolute-relative w-[40%]"> <!--imagem principal-->
+            <h1 class="absolute mt-16 ml-10 font-bold text-3xl bg-white w-[18.5%] h-[6%] ">&nbsp Shop the Ordinary</h1>
+            <h2 class="absolute mt-[113px] ml-10 font-bold text-3xl bg-white w-[12%] h-[6%]">&nbsp collection</h2>
+            <button class="absolute mt-44 ml-10   bg-black text-white w-[6.5%] h-[6%] rounded-[4px]">Shop Now</button>
+            <img class="w-[100%] h-[95%] mt-5" src="imagens/imagem-principal.jpg" alt="">
         </div>
-        <div class="flex flex-col items-center mt-8">
-            <h2 class="font-bold">Skincare</h2>
-            <h1 class="text-4xl">Aperfeiçoe sua rotina</h1>
-            <p class="hidden xl:block">Descubra o segredo para uma pele impecável com a nossa coleção de cuidados com a pele cuidadosamente selecionada por
-            especialistas. Aprimore a sua rotina com os nossos produtos premium e conquiste uma pele radiante e saudável com apenas
-            um clique.</p>
+        <div class="flex flex-col w-[30%]">
+            <div class="h-[50%] w-[95%] ml-3 mt-5 bg-[#BA8964] rounded-tr-[10px]">
+                <div class="flex flex-col items-center">
+                    <p class="text-base text-white font-bold mt-4">Explore Skincare</p>
+                    <img class="w-[40%] mt-5" src="imagens/segunda-imagem-1.png">
+                    <button class="text-white border-white border-2 mt-5 w-32 h-10">Shop Now</button>
+                </div>
+            </div>
+            <div class="h-[45%] w-[95%] ml-3 flex flex-col items-center">
+                <img class="xl:w-[100%] h-[40%] mt-5" src="imagens/terceira-imagem-1.jpg">
+                <div class="flex flex-col items-start w-[80%]">
+                    <p class="text-4xl font-bold mt-4">Education</p>
+                    <p class="mt-3">Browse our articles to find <br> skincare routines & more on <br> our blog.</p>
+                    <p class="mt-2">Explore Blog ⟶</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="xl:hidden w-full flex-col"> <!--versão mobile-->
+        <div class="flex justify-between items-center h-20 bg-[#fa46af1a] xl:bg-white ">
+            <h2 class="ml-5 text-2xl xl:text-sm font-bold">OKYO</h2>
+            <img class="w-5 mr-5" src="imagens/menu-hamburguer.png" alt="">
+        </div>
+        <div class="flex flex-col items-center mt-8 xl:flex">
+            <h2 class="font-bold text-3xl xl:text-sm">Skincare</h2>
+            <h1 class="text-4xl mt-3 flex flex-col items-center">Aperfeiçoe sua rotina <span class="xl:hidden"><span
+                        class="flex justify-center">com</span> <span class="flex justify-center">os produtos</span>
+                    <span class="text-6xl">the ordinary</span><span class="flex justify-center text-2xl">com apenas um
+                        clique →
+                    </span></span></h1>
+            <p class="hidden xl:block">Descubra o segredo para uma pele impecável com a nossa coleção de cuidados com a
+                pele cuidadosamente selecionada por
+                especialistas. Aprimore a sua rotina com os nossos produtos premium e conquiste uma pele radiante e
+                saudável com apenas
+                um clique.</p>
             <p class="hidden xl:block">Compre The Ordinary →</p>
+
+                <div class="xl:hidden bg-[#fa46af1a] mt-10 border-2 border-gray-200 w-[334px] h-[471px] rounded-[10px]">
+                    <div class="flex justify-between">
+                        <button class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
+                        <img class="w-10 h-10 mt-3 mr-3" src="imagens/coração.png" alt="">
+                     </div>
+                    <div class="flex justify-center"><img class="w-20" src="imagens/produto-1-1.png" alt="produto-1"></div>
+                    <h1 class="text-xl font-semibold ml-5">The Ordinary - Serum Foundation 3.0 Y Medium Dark</h1>
+                    <p class="pt-3 ml-5 font-medium">O sérum Coverage Foundation é uma base de cobertura total que oferece
+                        um acabamento lindamente liso que ainda parece
+                        natural.
+                    </p>
+                </div>   
+
+                <div class="xl:hidden bg-[#fa46af1a] mt-10 border-2 border-gray-200 w-[334px] h-[471px] rounded-[10px]">
+                    <div class="flex justify-between">
+                        <button class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
+                        <img class="w-10 h-10 mt-3 mr-3" src="imagens/coração.png" alt="">
+                    </div>
+                    <div class="flex justify-center"><img class="w-32" src="imagens/produto-2-2.png" alt="produto-1">
+                    </div>
+                    <h1 class="text-xl font-semibold ml-5">the ordinary azelaic acid suspension 10%</h1>
+                    <p class="pt-3 ml-5 font-medium">Ele ilumina o tom da pele enquanto melhora visivelmente a
+                        uniformidade da textura da pele e reduz a aparência de
+                        manchas.
+                    </p>
+                </div>    
+
+                <div class="xl:hidden bg-[#fa46af1a] mt-10 border-2 border-gray-200 w-[334px] h-[471px] rounded-[10px]">
+                    <div class="flex justify-between">
+                        <button class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
+                        <img class="w-10 h-10 mt-3 mr-3" src="imagens/coração.png" alt="">
+                    </div>
+                    <div class="flex justify-center"><img class="w-20" src="imagens/produto-3-3.png" alt="produto-1"></div>
+                    <h1 class="text-xl font-semibold ml-5">the ordinary hyaluronic acid 2% + b5</h1>
+                    <p class="pt-3 ml-5 font-medium">este tratamento sem óleo penetra profundamente
+                        nas camadas da pele para fornecer uma hidratação intensa e duradoura que suaviza
+                        perfeitamente.
+                    </p>
+                </div>    
+
+                <div class="xl:hidden bg-[#fa46af1a] mt-10 mb-10 border-2 border-gray-200 w-[334px] h-[471px] rounded-[10px]">
+                    <div class="flex justify-between">
+                        <button class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
+                        <img class="w-10 h-10 mt-3 mr-3" src="imagens/coração.png" alt="">
+                    </div>
+                    <div class="flex justify-center"><img class="w-24" src="imagens/produto-4-4.png" alt="produto-1"></div>
+                    <h1 class="text-xl font-semibold ml-5">the ordinary natural moisturizing factors + ha</h1>
+                    <p class="pt-3 ml-5 font-medium">Um produto para limpeza suave formulado para a remoção de
+                        maquiagem, deixando a pele suave e hidratada.
+                    </p>
+                </div>
+
         </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
     </div>
-
-    <div>
-
-    </div>
-
-    <div>
-
-    </div>
+    <footer class="xl:hidden w-full h-20 flex justify-center items-center bg-[#fa46af42]">
+        <h1>© 2022 The Ordinary</h1>
+    </footer>
 </body>
+
 </html>
