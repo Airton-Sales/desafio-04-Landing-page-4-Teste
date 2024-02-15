@@ -1,89 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt-br
-">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+       .meu-svg{
+           cursor: pointer;
+           fill: none;
+       }
+    </style>
     <title>Document</title>
 </head>
-
-<body class="">
-    <div class="xl:w-80 flex-col ">
-        <div class="flex justify-between mt-8">
-            <h2 class="ml-5">OKYO</h2>
-            <img class="w-5 mr-5" src="imagens/icons8-cardápio.gif" alt="">
-        </div>
-        <div class="flex flex-col items-center mt-8">
-            <h2 class="font-bold text-3xl">Skincare</h2>
-            <h1 class="text-4xl mt-3 flex flex-col items-center">Aperfeiçoe sua rotina <span class="xl:hidden"><span
-                        class="flex justify-center">com</span> <span class="flex justify-center">os produtos</span>
-                    <span class="text-6xl">the ordinary</span><span class="flex justify-center text-2xl">com apenas um
-                        clique →
-                    </span></span></h1>
-            <p class="hidden xl:block">Descubra o segredo para uma pele impecável com a nossa coleção de cuidados com a
-                pele cuidadosamente selecionada por
-                especialistas. Aprimore a sua rotina com os nossos produtos premium e conquiste uma pele radiante e
-                saudável com apenas
-                um clique.</p>
-            <p class="hidden xl:block">Compre The Ordinary →</p>
-
-            <div class="xl:hidden bg-[#fa46af1a] mt-10 border-2 border-gray-200 w-[334px] h-[471px] rounded-[10px]">
-                <div class="flex justify-between">
-                    <button
-                        class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
-                    <img class="w-10 h-10 mt-3 mr-3" src="imagens/coração.png" alt="">
-                </div>
-                <div class="flex justify-center"><img class="w-20" src="imagens/produto-1-1.png" alt="produto-1"></div>
-                <h1 class="text-xl font-semibold ml-5">The Ordinary - Serum Foundation 3.0 Y Medium Dark</h1>
-                <p class="pt-3 ml-5 font-medium">O sérum Coverage Foundation é uma base de cobertura total que oferece
-                    um acabamento lindamente liso que ainda parece
-                    natural.
-                </p>
-                <div class="xl:hidden bg-[#fa46af1a] mt-10 border-2 border-gray-200 w-[334px] h-[471px] rounded-[10px]">
-                    <div class="flex justify-between">
-                        <button
-                            class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
-                        <img class="w-10 h-10 mt-3 mr-3" src="imagens/coração.png" alt="">
-                    </div>
-                    <div class="flex justify-center"><img class="w-32" src="imagens/produto-2-2.png" alt="produto-1">
-                    </div>
-                    <h1 class="text-xl font-semibold ml-5">the ordinary azelaic acid suspension 10%</h1>
-                    <p class="pt-3 ml-5 font-medium">Ele ilumina o tom da pele enquanto melhora visivelmente a
-                        uniformidade da textura da pele e reduz a aparência de
-                        manchas.
-                    </p>
-                    <div
-                        class="xl:hidden bg-[#fa46af1a] mt-10 border-2 border-gray-200 w-[334px] h-[471px] rounded-[10px]">
-                        <div class="flex justify-between">
-                            <button
-                                class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
-                            <img class="w-10 h-10 mt-3 mr-3" src="imagens/coração.png" alt="">
-                        </div>
-                        <div class="flex justify-center"><img class="w-20" src="imagens/produto-3-3.png"
-                                alt="produto-1"></div>
-                        <h1 class="text-xl font-semibold ml-5">the ordinary hyaluronic acid 2% + b5</h1>
-                        <p class="pt-3 ml-5 font-medium">este tratamento sem óleo penetra profundamente
-                            nas camadas da pele para fornecer uma hidratação intensa e duradoura que suaviza
-                            perfeitamente.
-                        </p>
-                        <div
-                            class="xl:hidden bg-[#fa46af1a] mt-10 mb-10 border-2 border-gray-200 w-[334px] h-[471px] rounded-[10px]">
-                            <div class="flex justify-between">
-                                <button
-                                    class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
-                                <img class="w-10 h-10 mt-3 mr-3" src="imagens/coração.png" alt="">
-                            </div>
-                            <div class="flex justify-center"><img class="w-24" src="imagens/produto-4-4.png"
-                                    alt="produto-1"></div>
-                            <h1 class="text-xl font-semibold ml-5">the ordinary natural moisturizing factors + ha</h1>
-                            <p class="pt-3 ml-5 font-medium">Um produto para limpeza suave formulado para a remoção de
-                                maquiagem, deixando a pele suave e hidratada.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <div class="mr-3 mt-3">
+        <svg class="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="15.000000pt" height="15.000000pt"
+            viewBox="0 -80 1280.000000 1389.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)" stroke="red" stroke-width="700">
+                <path d="M3250 11884 c-25 -2 -106 -11 -180 -20 -1485 -172 -2704 -1295 -3001
+                                -2764 -133 -660 -67 -1507 171 -2223 252 -753 675 -1411 1397 -2172 342 -360
+                                634 -630 1588 -1470 231 -203 488 -430 570 -505 1024 -920 1735 -1692 2346
+                                -2547 l130 -183 132 0 132 1 130 192 c557 822 1212 1560 2185 2461 191 178
+                                408 373 1027 923 956 852 1445 1343 1841 1850 643 825 968 1603 1064 2553 19
+                                196 17 665 -5 835 -105 805 -441 1497 -998 2054 -557 557 -1250 894 -2054 998
+                                -193 24 -613 24 -810 0 -733 -93 -1379 -387 -1920 -874 -191 -172 -406 -417
+                                -535 -610 -30 -45 -57 -82 -60 -82 -3 0 -30 37 -60 82 -129 193 -344 438 -535
+                                610 -531 478 -1170 773 -1878 867 -146 20 -562 34 -677 24z" />
+            </g>
+        </svg>
+    </div>
+    <div class="mr-3 mt-3">
+        <svg class="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="15.000000pt" height="15.000000pt"
+            viewBox="0 -80 1280.000000 1389.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)" stroke="red" stroke-width="700">
+                <path d="M3250 11884 c-25 -2 -106 -11 -180 -20 -1485 -172 -2704 -1295 -3001
+                                -2764 -133 -660 -67 -1507 171 -2223 252 -753 675 -1411 1397 -2172 342 -360
+                                634 -630 1588 -1470 231 -203 488 -430 570 -505 1024 -920 1735 -1692 2346
+                                -2547 l130 -183 132 0 132 1 130 192 c557 822 1212 1560 2185 2461 191 178
+                                408 373 1027 923 956 852 1445 1343 1841 1850 643 825 968 1603 1064 2553 19
+                                196 17 665 -5 835 -105 805 -441 1497 -998 2054 -557 557 -1250 894 -2054 998
+                                -193 24 -613 24 -810 0 -733 -93 -1379 -387 -1920 -874 -191 -172 -406 -417
+                                -535 -610 -30 -45 -57 -82 -60 -82 -3 0 -30 37 -60 82 -129 193 -344 438 -535
+                                610 -531 478 -1170 773 -1878 867 -146 20 -562 34 -677 24z" />
+            </g>
+        </svg>
+    </div>
+    <script>
+        let corPreenchida = false;
+        const svgElement = document.querySelectorAll(".meu-svg");
+        function trocarCor() {
+            if (!corPreenchida) {
+                svgElement.style.fill = "red";
+                corPreenchida = true;
+            } else {
+                svgElement.style.fill = "none";
+                corPreenchida = false;
+            }
+        }
+        svgElement.forEach((element) => {
+                element.addEventListener("click", trocarCor);
+            });
+    </script>
 </body>
-
 </html>
+
+
+
+
+<div class="mr-3 mt-3">
+    <svg class="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="15.000000pt" height="15.000000pt"
+        viewBox="0 -80 1280.000000 1389.000000" preserveAspectRatio="xMidYMid meet">
+        <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)" stroke="red" stroke-width="700">
+            <path d="M3250 11884 c-25 -2 -106 -11 -180 -20 -1485 -172 -2704 -1295 -3001
+        -2764 -133 -660 -67 -1507 171 -2223 252 -753 675 -1411 1397 -2172 342 -360
+        634 -630 1588 -1470 231 -203 488 -430 570 -505 1024 -920 1735 -1692 2346
+        -2547 l130 -183 132 0 132 1 130 192 c557 822 1212 1560 2185 2461 191 178
+        408 373 1027 923 956 852 1445 1343 1841 1850 643 825 968 1603 1064 2553 19
+        196 17 665 -5 835 -105 805 -441 1497 -998 2054 -557 557 -1250 894 -2054 998
+        -193 24 -613 24 -810 0 -733 -93 -1379 -387 -1920 -874 -191 -172 -406 -417
+        -535 -610 -30 -45 -57 -82 -60 -82 -3 0 -30 37 -60 82 -129 193 -344 438 -535
+        610 -531 478 -1170 773 -1878

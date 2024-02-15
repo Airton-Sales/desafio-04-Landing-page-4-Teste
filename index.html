@@ -21,9 +21,8 @@
             fill: none;
         }
 
-        #meu-svg {
-            cursor: pointer;
-            fill: none;
+        .meu-svg.preenchido {
+            fill: red;
         }
     </style>
     <title>Document</title>
@@ -100,8 +99,8 @@
                     <button
                         class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
                     <div class="mr-3 mt-3">
-                        <svg class="meu-svg" id="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
-                            width="15.000000pt" height="15.000000pt" viewBox="0 -80 1280.000000 1389.000000"
+                        <svg class="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="15.000000pt"
+                            height="15.000000pt" viewBox="0 -80 1280.000000 1389.000000"
                             preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)" stroke="red"
                                 stroke-width="700">
@@ -133,9 +132,9 @@
                     <button
                         class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
 
-                    <div class="mr-3 mt-3">
-                        <svg class="meu-svg1" id="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
-                            width="15.000000pt" height="15.000000pt" viewBox="0 -80 1280.000000 1389.000000"
+                    <div  class="mr-3 mt-3">
+                        <svg class="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="15.000000pt"
+                            height="15.000000pt" viewBox="0 -80 1280.000000 1389.000000"
                             preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)" stroke="red"
                                 stroke-width="700">
@@ -199,19 +198,25 @@
     </footer>
 
     <script>
-        const svgElement = document.querySelector(".meu-svg", ".meu-svg1");
-        let corPreenchida = false;
-        function trocarCor() {
-            if (!corPreenchida) {
-                svgElement.style.fill = "red";
-                corPreenchida = true;
-            } else {
-                svgElement.style.fill = "none";
-                corPreenchida = false;
-            }
-        }
-        svgElement.addEventListener("click", trocarCor);
+        const svgElements = document.querySelectorAll(".meu-svg");
 
+            let corPreenchida = false; // Declara a variável fora da função para manter o estado
+
+            function trocarCor(event) {
+                const svgElement = event.target; // Referencia o elemento clicado
+
+                if (!corPreenchida) {
+                    svgElement.style.fill = "red";
+                    corPreenchida = true;
+                } else {
+                    svgElement.style.fill = "none";
+                    corPreenchida = false;
+                }
+            }
+
+            svgElements.forEach(element => {
+                element.addEventListener("click", trocarCor);
+            });
     </script>
 </body>
 
