@@ -79,12 +79,15 @@
             <h2 class="ml-5 text-2xl xl:text-sm font-bold">OKYO</h2>
             <img class="w-5 mr-5" src="imagens/menu-hamburguer.png" alt="">
         </div>
+        <img class="xl:hidden" src="imagens/teste.png" alt="">
         <div class="flex flex-col items-center mt-8 xl:flex">
             <h2 class="font-bold text-3xl xl:text-sm">Skincare</h2>
             <h1 id="font" class="text-4xl mt-3 flex flex-col">Aperfeiçoe sua <br> rotina com <br> os produtos
                 <span class="text-6xl mt-5">the ordinary</span><span
-                    class="flex justify-center font-thin text-gray-500 text-2xl mt-5">com apenas um
-                    clique →
+                    class="flex justify-center font-thin text-gray-500 text-2xl mt-5"><a href="https://theordinary.com/en-br" target="_blank">
+                        com apenas um
+                        clique →
+                    </a>
                 </span></span>
             </h1>
             <p class="hidden xl:block">Descubra o segredo para uma pele impecável com a nossa coleção de cuidados com a
@@ -166,7 +169,26 @@
                 <div class="flex justify-between">
                     <button
                         class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
-                    <img class="w-5 h-5 mt-3 mr-3" src="imagens/coração.png">
+
+
+                    <div class="mr-3 mt-3">
+                        <svg class="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="15.000000pt" height="15.000000pt"
+                            viewBox="0 -80 1280.000000 1389.000000" preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)" stroke="red" stroke-width="700">
+                                <path d="M3250 11884 c-25 -2 -106 -11 -180 -20 -1485 -172 -2704 -1295 -3001
+                                                -2764 -133 -660 -67 -1507 171 -2223 252 -753 675 -1411 1397 -2172 342 -360
+                                                634 -630 1588 -1470 231 -203 488 -430 570 -505 1024 -920 1735 -1692 2346
+                                                -2547 l130 -183 132 0 132 1 130 192 c557 822 1212 1560 2185 2461 191 178
+                                                408 373 1027 923 956 852 1445 1343 1841 1850 643 825 968 1603 1064 2553 19
+                                                196 17 665 -5 835 -105 805 -441 1497 -998 2054 -557 557 -1250 894 -2054 998
+                                                -193 24 -613 24 -810 0 -733 -93 -1379 -387 -1920 -874 -191 -172 -406 -417
+                                                -535 -610 -30 -45 -57 -82 -60 -82 -3 0 -30 37 -60 82 -129 193 -344 438 -535
+                                                610 -531 478 -1170 773 -1878 867 -146 20 -562 34 -677 24z" />
+                            </g>
+                        </svg>
+                    </div>
+
+
                 </div>
                 <div class="flex justify-center"><img class="w-20 mt-5" src="imagens/produto-3-3.png" alt="produto-1">
                 </div>
@@ -182,7 +204,26 @@
                 <div class="flex justify-between">
                     <button
                         class="ml-3 w-28 h-10 mt-3 border-2 rounded-[10px] bg-pink-300 text-white">Lançamento</button>
-                    <img class="w-5 h-5 mt-3 mr-3" src="imagens/coração.png">
+
+
+                    <div class="mr-3 mt-3">
+                        <svg class="meu-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="15.000000pt" height="15.000000pt"
+                            viewBox="0 -80 1280.000000 1389.000000" preserveAspectRatio="xMidYMid meet">
+                            <g transform="translate(0.000000,1189.000000) scale(0.100000,-0.100000)" stroke="red" stroke-width="700">
+                                <path d="M3250 11884 c-25 -2 -106 -11 -180 -20 -1485 -172 -2704 -1295 -3001
+                                                -2764 -133 -660 -67 -1507 171 -2223 252 -753 675 -1411 1397 -2172 342 -360
+                                                634 -630 1588 -1470 231 -203 488 -430 570 -505 1024 -920 1735 -1692 2346
+                                                -2547 l130 -183 132 0 132 1 130 192 c557 822 1212 1560 2185 2461 191 178
+                                                408 373 1027 923 956 852 1445 1343 1841 1850 643 825 968 1603 1064 2553 19
+                                                196 17 665 -5 835 -105 805 -441 1497 -998 2054 -557 557 -1250 894 -2054 998
+                                                -193 24 -613 24 -810 0 -733 -93 -1379 -387 -1920 -874 -191 -172 -406 -417
+                                                -535 -610 -30 -45 -57 -82 -60 -82 -3 0 -30 37 -60 82 -129 193 -344 438 -535
+                                                610 -531 478 -1170 773 -1878 867 -146 20 -562 34 -677 24z" />
+                            </g>
+                        </svg>
+                    </div>
+
+
                 </div>
                 <div class="flex justify-center"><img class="w-24 mt-5" src="imagens/produto-4-4.png" alt="produto-1">
                 </div>
@@ -198,25 +239,26 @@
     </footer>
 
     <script>
-        const svgElements = document.querySelectorAll(".meu-svg");
+       const svgElements = document.querySelectorAll(".meu-svg");
 
-            let corPreenchida = false; // Declara a variável fora da função para manter o estado
+        let corPreenchida = false; // Declara a variável fora da função para manter o estado
 
-            function trocarCor(event) {
-                const svgElement = event.target; // Referencia o elemento clicado
+        function trocarCor(event) {
+            const svgElement = event.target; // Referencia o elemento clicado
 
-                if (!corPreenchida) {
-                    svgElement.style.fill = "red";
-                    corPreenchida = true;
-                } else {
-                    svgElement.style.fill = "none";
-                    corPreenchida = false;
-                }
+            if (!corPreenchida) {
+                svgElement.style.fill = "red";
+                corPreenchida = true;
+            } else {
+                svgElement.style.fill = "none";
+                corPreenchida = false;
             }
+        }
 
-            svgElements.forEach(element => {
-                element.addEventListener("click", trocarCor);
-            });
+        svgElements.forEach(element => {
+            element.addEventListener("click", trocarCor);
+        });
+
     </script>
 </body>
 
